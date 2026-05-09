@@ -1,6 +1,6 @@
 package org.cleartrip.bookmyshow.models;
 
-public enum PaymentProvided {
+public enum PaymentProvider {
     UPI,
     PAYPAL,
     CC,
