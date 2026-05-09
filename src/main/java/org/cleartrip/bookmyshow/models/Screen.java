@@ -1,6 +1,6 @@
 package org.cleartrip.bookmyshow.models;
 
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -10,7 +10,23 @@ import java.util.List;
 @Setter
 public class Screen extends BaseModel{
     private String name;
+
+
+    @OneToMany
+    private List<Seat> seats;
+
+
     private List<SeatType> seatTypes;
+
+
+    @Enumerated(EnumType.ORDINAL)
+    @ElementCollection
     private List<Feature> features;
 
 }
+
+/*
+1               M
+Screen -------> Seat 1:M
+    1            1
+ */
