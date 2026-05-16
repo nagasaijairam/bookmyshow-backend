@@ -1,8 +1,7 @@
 package org.cleartrip.bookmyshow.models;
 
-public enum PaymetMode{
+public enum PaymentMode {
     UPI,
     CREDIT_CARD,
     DEBIT_CARD,
-
 }

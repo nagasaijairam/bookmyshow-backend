@@ -16,6 +16,8 @@ public class Screen extends BaseModel{
     private List<Seat> seats;
 
 
+    @Enumerated(EnumType.ORDINAL)
+    @ElementCollection
     private List<SeatType> seatTypes;
 
 
